@@ -1,10 +1,11 @@
 module workshop_javafx_jdbc {
-	requires javafx.controls;
+	requires transitive javafx.controls;
 	requires javafx.fxml;
 	requires lombok;
-	requires java.sql;
+	requires transitive java.sql;
 	requires transitive javafx.base;
 	requires transitive javafx.graphics;
+
 
 	
 	opens application to javafx.graphics, javafx.fxml;
