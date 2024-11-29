@@ -10,7 +10,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @EqualsAndHashCode(of = "id")
-@ToString
+
 @NoArgsConstructor @AllArgsConstructor
 @Getter @Setter
 public class Department implements Serializable {
@@ -18,6 +18,11 @@ public class Department implements Serializable {
 	// attributes
 	private Integer id;
 	private String name;
+	
+	@Override
+	public String toString() {
+		return name;
+	}
 
 	
 }
